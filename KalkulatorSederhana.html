@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <h1>Kalkulator Tambah/Kurang</h1>
+
+    Bilangan 1 <input type="text" id="bil1"><br>
+    Bilangan 2 <input type="text" id="bil2"><br>
+
+    <button onclick="tambah()">Tambah</button>
+    <button onclick="kurang()">Kurang</button><br>
+
+    Hasil <input type="text" id="hasil">
+
+    <script>
+        function tambah() {
+            var b1 = parseFloat(document.getElementById("bil1").value);
+            var b2 = parseFloat(document.getElementById("bil2").value);
+            document.getElementById("hasil").value = b1 + b2;
+        }
+
+        function kurang() {
+            var b1 = parseFloat(document.getElementById("bil1").value);
+            var b2 = parseFloat(document.getElementById("bil2").value);
+            document.getElementById("hasil").value = b1 - b2;
+        }
+    </script>
+</body>
+</html>
